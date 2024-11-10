@@ -12,3 +12,21 @@ Você já pensou em criar seu próprio aplicativo, mas não sabe por onde começ
 
 - Desenvolvimento de Software
 - Desenvolvimento iOS
+
+## Conteúdo do Curso
+
+### Compreendendo os Conceitos Básicos do SwiftUI
+
+O curso abrange componentes essenciais do SwiftUI como Text, Image e Stacks, que são fundamentais para construir interfaces de usuário em apps iOS.
+
+### Criando Elementos Interativos
+
+Aprenda como criar buttons, toggles, sliders e text fields para tornar seu app interativo e amigável ao usuário.
+
+### Organizando e Navegando em Seu App
+
+O curso discute a organização do código e o uso de ferramentas de navegação como TabView e NavigationView para melhorar a experiência do usuário.
+
+### Utilizando o Git Stash na CLI
+
+Aprenda a usar o `git stash` na linha de comando (CLI) para salvar mudanças não confirmadas e manter seu histórico de commits limpo.

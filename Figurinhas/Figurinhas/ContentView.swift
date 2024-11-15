@@ -22,10 +22,28 @@ struct ContentView: View {
                     .bold()
                 Text("Problema em dobro")
             }
-            Image("figura_01")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100)
+            HStack {
+                Image("figura_01")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100)
+                VStack {
+                    HStack {
+                        Image(systemName: "lifepreserver")
+                            .foregroundColor(Color.green)
+                            .font(.system(size: 30))
+                        Text("Vidas:")
+                        Text("2")
+                    }
+                    HStack {
+                        Image(systemName: "bolt")
+                            .foregroundColor(Color.yellow)
+                            .font(.system(size: 30))
+                        Text("Potência:")
+                        Text("60%")
+                    }
+                }
+            }
         }
     }
 }

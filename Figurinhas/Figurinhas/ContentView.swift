@@ -22,8 +22,11 @@ struct ContentView: View {
                     .bold()
                 Text("Problema em dobro")
             }
+            Image("figura_01")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100)
         }
-        .padding()
     }
 }
 

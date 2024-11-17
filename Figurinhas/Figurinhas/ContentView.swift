@@ -56,14 +56,27 @@ struct ContentView: View {
             Spacer()
             HStack {
                 Spacer()
-                Button(action: {
-                    itensNaColecao += 1
-                }) {
-                    Text("Na sua coleção: \(itensNaColecao)")
-                        .padding()
-                        .background(.green)
+                if itensNaColecao == 0 {
+                    Button(action: {
+                        itensNaColecao += 1
+                    }) {
+                        Text("Adicionar a coleção")
+                            .padding()
+                            .background(.blue)
+                            .foregroundColor(.white)
+                    }
+                    .cornerRadius(30)
+                } else {
+                    Button(action: {
+                        itensNaColecao += 1
+                    }) {
+                        Text("Na sua coleção: \(itensNaColecao)")
+                            .padding()
+                            .background(.green)
+                            .foregroundColor(.white)
+                    }
+                    .cornerRadius(30)
                 }
-                .cornerRadius(30)
                 Spacer()
             }
             .padding()

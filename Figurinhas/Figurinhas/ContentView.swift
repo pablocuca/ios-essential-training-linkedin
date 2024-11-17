@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var itensNaColecao: Int = 0
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Mingle")
@@ -55,9 +57,9 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    print("Botão pressionado")
+                    itensNaColecao += 1
                 }) {
-                    Text("Na sua coleção: 2")
+                    Text("Na sua coleção: \(itensNaColecao)")
                         .padding()
                         .background(.green)
                 }

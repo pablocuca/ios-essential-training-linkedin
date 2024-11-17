@@ -52,6 +52,19 @@ struct ContentView: View {
                 Spacer()
             }
             Spacer()
+            HStack {
+                Spacer()
+                Button(action: {
+                    print("Botão pressionado")
+                }) {
+                    Text("Na sua coleção: 2")
+                        .padding()
+                        .background(.green)
+                }
+                .cornerRadius(30)
+                Spacer()
+            }
+            .padding()
         }
     }
 }

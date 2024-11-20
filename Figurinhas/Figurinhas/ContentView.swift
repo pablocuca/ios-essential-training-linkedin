@@ -28,23 +28,8 @@ struct ContentView: View {
                     .scaledToFit()
                     .frame(width: 75.0)
                 VStack(alignment: .leading) {
-                    HStack {
-                        Image(systemName: "lifepreserver")
-                            .foregroundColor(Color.green)
-                            .frame(width: 30.0)
-                            .font(.system(size: 30))
-                        Text("Vidas:")
-                        Text("2")
-                            .padding(.trailing)
-                    }
-                    HStack {
-                        Image(systemName: "bolt")
-                            .foregroundColor(Color.yellow)
-                            .frame(width: 30.0)
-                            .font(.system(size: 30))
-                        Text("Potência:")
-                        Text("60%")
-                    }
+                    PropriedadesView()
+                    PropriedadesView(imagem: "bolt", nome: "Potência: ", valor: "60%", cor: Color.yellow)
                 }
             }
             .padding(30)

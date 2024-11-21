@@ -12,10 +12,6 @@ struct FiguraDetalheView: View {
      
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Mingle")
-                .font(.title)
-                .bold()
-                .padding()
             HStack {
                 Text("Frase: ")
                     .bold()
@@ -66,6 +62,7 @@ struct FiguraDetalheView: View {
             }
             .padding()
         }
+        .navigationTitle(Text("Mingle"))
     }
 }
 
